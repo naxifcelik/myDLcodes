@@ -1,9 +1,10 @@
-import pandas as pd
-from multiprocessing import Process, Queue
-from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, classification_report
+#Nazif ÇELİK
+import pandas as pd #data manipulation library
+from multiprocessing import Process, Queue #multithread library
+from sklearn.model_selection import train_test_split #Splitting the dataset into train and test sections
+from sklearn.feature_extraction.text import CountVectorizer #for vectorization
+from sklearn.ensemble import RandomForestClassifier #for random forest classification algorithm
+from sklearn.metrics import accuracy_score, classification_report #for classification report 
 
 # Function to vectorize and train the model
 def vectorize_and_train(X_train, X_test, y_train, queue):
